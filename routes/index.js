@@ -105,7 +105,7 @@ router.post('/sendMail', [
                         day: day,
                         query: {
                             key: 'gender',
-                            value: gender === 'female' ? 'F' : 'M',
+                            value: gender,
                             specific: specific
                         }
                     });
@@ -120,7 +120,7 @@ router.post('/sendMail', [
                         day: day,
                         query: {
                             key: 'gender',
-                            value: gender === 'female' ? 'F' : 'M',
+                            value: gender,
                             specific: specific
                         }
                     });
@@ -134,7 +134,7 @@ router.post('/sendMail', [
                         event: eventName,
                         query: {
                             key: 'gender',
-                            value: gender === 'female' ? 'F' : 'M',
+                            value: gender,
                             specific: specific
                         }
                     });
@@ -144,7 +144,7 @@ router.post('/sendMail', [
                 break;
         }
 
-        if (typeof response === 'undefined' || response.rs.length === 0) {
+        if (typeof response === 'undefined' || response.rs == undefined || response.rs.length === 0) {
             return res.status(500).send({
                 status: 'EmptyParticipants',
                 err: 'Participant list is empty'
