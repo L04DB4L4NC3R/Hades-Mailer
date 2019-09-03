@@ -15,5 +15,5 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        docker image build -t angadsharma1016/mailerqr:latest .
-        docker image push angadsharma1016/mailerqr:latest
+        #docker image build -t angadsharma1016/mailerqr:latest .
+        #docker image push angadsharma1016/mailerqr:latest
