@@ -1,0 +1,31 @@
+{
+  "name": "mailer-microservice",
+  "version": "1.0.0",
+  "description": "A simple QR generator and mailer microservice written in Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDGVIT/Mailer-Microservice.git"
+  },
+  "author": "Amogh Lele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GDGVIT/Mailer-Microservice/issues"
+  },
+  "homepage": "https://github.com/GDGVIT/Mailer-Microservice#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "md5": "^2.2.1",
+    "nodemailer": "^6.3.0",
+    "qrcode": "^1.4.1",
+    "showdown": "^1.9.0"
+  }
+}
